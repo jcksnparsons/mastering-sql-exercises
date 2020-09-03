@@ -28,7 +28,7 @@ SELECT d.business_name,
     e.first_name,
     e.last_name
 FROM Dealerships d
-    LEFT JOIN DealershipEmployees de ON d.dealership_id = de.dealership_id
+    JOIN DealershipEmployees de ON d.dealership_id = de.dealership_id
     LEFT JOIN Employees e ON de.employee_id = e.employee_id
 ORDER BY d.business_name;
 
